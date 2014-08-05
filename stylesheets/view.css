@@ -1,0 +1,92 @@
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ /* Set floating body text margins to 0 */
+ [class*="dom-paragraph"] p {
+   margin: 0 0 10px 0;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .dom-paragraph {
+   overflow: hidden;
+   width: 167px;
+   height: 164px;
+   position: absolute;
+   top: 114px;
+   left: -166px;
+ }
+ 
+ .container .row-fluid .wholeTopBar .container .navbar.topNavBar {
+   margin: 5px;
+ }
+ .container .row-fluid .wholeTopBar .container .navbar.topNavBar .navbar-inner {
+   background: #ffffff;
+   background-image: -moz-linear-gradient(270deg, #ffffff 0%, #f2f2f2 100%);
+   background-image: -webkit-linear-gradient(270deg, #ffffff 0%, #f2f2f2 100%);
+   background-image: -o-linear-gradient(270deg, #ffffff 0%, #f2f2f2 100%);
+   background-image: linear-gradient(180deg, #ffffff 0%, #f2f2f2 100%);
+   padding: 5px 20px 5px 20px;
+   border-radius: 3px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+ .container .row-fluid .wholeTopBar .container .navbar.topNavBar .navbar-inner .brand.navVar1 {
+   text-align: center;
+   font-size: 25px;
+   line-height: 30px;
+   font-family:"verdana";
+ }
+ .container .row-fluid .wholeTopBar .container .navbar.topNavBar .navbar-inner .nav .navVar2 a {
+   text-align: center;
+   line-height: 30px;
+   font-size: 23px;
+   font-family:"verdana";
+ }
+ .container .row-fluid .wholeTopBar .container .navbar.topNavBar .navbar-inner .nav .navVar3 a {
+   text-align: center;
+   line-height: 30px;
+   font-size: 23px;
+   font-family:"verdana";
+ }
+ .container .row-fluid .wholeTopBar .navbar.secNavBar {
+   margin: 5px 10px 10px 10px;
+   height: 55px;
+ }
+ .container .row-fluid .wholeTopBar .navbar.secNavBar .navbar-inner {
+   background: #ffffff;
+   background-image: -moz-linear-gradient(270deg, #ffffff 0%, #f2f2f2 100%);
+   background-image: -webkit-linear-gradient(270deg, #ffffff 0%, #f2f2f2 100%);
+   background-image: -o-linear-gradient(270deg, #ffffff 0%, #f2f2f2 100%);
+   background-image: linear-gradient(180deg, #ffffff 0%, #f2f2f2 100%);
+   padding: 5px 20px 5px 20px;
+   border-radius: 7px;
+   height: 45px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+ .container .row-fluid .wholeTopBar .navbar.secNavBar .navbar-inner .brand.secNavVar1 {
+   font-family:"verdana";
+ }
+ .container .row-fluid .wholeTopBar .navbar.secNavBar .navbar-inner .nav .secNavVar2 a {
+   font-family:"verdana";
+   font-size: 20px;
+ }
+ #loginSignupBtn .loginBtn {
+   border-radius: 5px 0px 0px 5px;
+   padding: 5px 12px 6px 12px;
+ }
+ #loginSignupBtn .signUpBtn {
+   border-radius: 0px 5px 5px 0px;
+   padding: 5px 12px 6px 12px;
+   margin: 0px;
+ }
