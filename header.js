@@ -1,1 +1,1 @@
-document.write("this is header");
+document.write("");
