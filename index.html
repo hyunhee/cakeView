@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/view.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
-    
-    <!-- 아래 두 JS링크는 dropdown실행을 위한 링크이므로 삭제하면 안됩니다.물논 위에것들-->
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/latest/css/bootstrap-combined.min.css" rel="stylesheet">
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/latest/js/bootstrap.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+  <!-- <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" /> -->
+  <link href="stylesheets/view.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+  
+  <!-- 아래 두 JS링크는 dropdown실행을 위한 링크이므로 삭제하면 안됩니다.물논 위에것들-->
+  
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/latest/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <script type="text/javascript" src="header.js"></script>
   <div class="bs-docs-example">
              <div id="navbar-example" class="navbar navbar-static">
                     <div class="navbar-inner">
@@ -42,8 +40,8 @@
  
                                         <li class="dropdown"><a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown"> Project<b class="caret"></b></a>
                                               <ul class="dropdown-menu" role="menu" href="#drop2">
-                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Project</a></li>
-                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Open Project</a></li>
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="project/index.html">New Project</a></li>
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1">Open Project</a></li>
                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">add contents</a></li>
                                                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">add contents</a></li>
                                               </ul>
@@ -71,7 +69,57 @@
                            </div>
                     </div>
              </div>
+<div id="navbar-example" class="navbar navbar-static">
+                    <div class="navbar-inner">
+                           <div class="container" style="width: auto;">
+                                 <ul class="nav">
+
+                                    <li class="dropdown">
+                                          <a href="#"id="secDrop1" role="button" class="dropdown-toggle" data-toggle="dropdown" >File<b class="caret"></b></a>
+                                              <ul class="dropdown-menu" role="menu" href="#secDrop1">
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Save As</a></li>
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Download</a></li>
+                                                     <!-- <li role="presentation" class="divider"></li> divider 필요시에 이거 주석 풀기 -->
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">rename</a></li>
+                                              </ul>
+                                        </li>
+ 
+                                        <li class="dropdown"><a href="#" id="secDrop2" role="button" class="dropdown-toggle" data-toggle="dropdown"> Tool<b class="caret"></b></a>
+                                              <ul class="dropdown-menu" role="menu" href="#secDrop2">
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="project/index.html">add contents</a></li>
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1">add contents</a></li>
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">add contents</a></li>
+                                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">add contents</a></li>
+                                              </ul>
+                                        </li>
+                                         
+                                 </ul>
+                                 
+                           </div>
+                    </div>
+             </div>
              
        </div>
 </body>
+<script>
+ //    var open = document.getElementById('openprj');
+ //    open.addEventListner('click',function handleFileSelect(evt){
+
+ //      var files = evt.target.files;
+ //      var output = [];
+ //      for (var i = 0, f; f = files[i]; i++) {
+ //      output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+ //                  f.size, ' bytes, last modified: ',
+ //                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+ //                  '</li>');
+ //    }
+ //    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+ //  }
+
+ //  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+
+ //    })
+ //   
+  </script>
 </html>
