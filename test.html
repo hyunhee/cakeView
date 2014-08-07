@@ -1,0 +1,134 @@
+<div class="col-sm-3 accordion-container" adjustheight="160" style="max-height: 433px;">
+  <accordion>
+    <div class="panel-group" ng-transclude="">
+      <div class="panel panel-default ng-isolate-scope" heading="Pages" is-open="true">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+      <a class="accordion-toggle ng-binding" ng-click="isOpen = !isOpen" accordion-transclude="heading">Pages</a>
+    </h4>
+        </div>
+        <div class="panel-collapse collapse in" collapse="!isOpen" style="height: auto;">
+          <div class="panel-body" ng-transclude="">
+            <div class="list-group ng-scope" adjustheight="325" style="max-height: 268px;">
+              <!-- ngRepeat: k in pages.keys().sort() --><a class="list-group-item " ng-repeat="k in pages.keys().sort()" ng-click="setActivePage(k);" ng-style="{ 'font-weight': (k === 'init' || k === 'main' ? 'bold' : 'normal')}" style="font-weight: normal;">h</a>
+              <!-- end ngRepeat: k in pages.keys().sort() --><a class="list-group-item " ng-repeat="k in pages.keys().sort()" ng-click="setActivePage(k);" ng-style="{ 'font-weight': (k === 'init' || k === 'main' ? 'bold' : 'normal')}" style="font-weight: bold;">init</a>
+              <!-- end ngRepeat: k in pages.keys().sort() --><a class="list-group-item active" ng-repeat="k in pages.keys().sort()" ng-click="setActivePage(k);" ng-style="{ 'font-weight': (k === 'init' || k === 'main' ? 'bold' : 'normal')}" style="font-weight: bold;">main</a>
+              <!-- end ngRepeat: k in pages.keys().sort() -->
+            </div>
+            <div class="btn-group btn-group-sm ng-scope">
+              <button type="button" class="btn btn-default" ng-click="newPage()"><span class="glyphicon glyphicon-plus"></span>
+              </button>
+              <button type="button" class="btn btn-default" ng-click="deletePage(currentPageName)"><span class="glyphicon glyphicon-minus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default ng-isolate-scope" heading="Log" is-open="$parent.logOpen">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+      <a class="accordion-toggle ng-binding" ng-click="isOpen = !isOpen" accordion-transclude="heading">Log</a>
+    </h4>
+        </div>
+        <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+          <div class="panel-body" ng-transclude="">
+            <form class="ng-scope ng-pristine ng-valid">
+              <input type="text" class="form-control ng-pristine ng-valid" id="log-chat-field" placeholder="Type here and press Enter" ng-model="chat.message" ui-keypress="{'enter':'sendChatMessage()'}">
+            </form>
+            <div class="list-group ng-scope" id="log-list" adjustheight="325" style="max-height: 268px;">
+              <!-- ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Aug 6, 2014 4:41:43 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Aug 5, 2014 12:24:42 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Aug 5, 2014 12:17:01 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Aug 5, 2014 12:14:57 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Aug 5, 2014 12:05:04 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">Anonymous</strong> Aug 4, 2014 11:41:05 AM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Aug 4, 2014 11:36:18 AM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Jul 30, 2014 4:00:07 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Jul 29, 2014 3:16:51 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Jul 29, 2014 3:08:03 PM
+                <br>Started editing
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+              <a class="list-group-item ng-scope ng-binding" ng-repeat="l in log" ng-click="focusLog(l[1])">
+                <strong class="ng-binding">김현희</strong> Jul 29, 2014 3:08:01 PM
+                <br>Project created
+                <br>
+                <!-- ngIf: l[1].simId -->
+                <span class="log-body ng-binding"></span>
+              </a>
+              <!-- end ngRepeat: l in log -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </accordion>
+</div>
